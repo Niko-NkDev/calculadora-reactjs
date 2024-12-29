@@ -1,0 +1,81 @@
+.App {
+  height: 100vh; 
+  background-image: url(./imagenes/pelealuffycaido.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Lato, sans-serif;
+  display: flex;
+  flex-wrap: wrap; 
+
+}
+
+.logo-contenedor {
+  padding: 20px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-pagina {
+  padding: 100px;
+  height: 30%;
+  width: 30%;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  animation: border-flicker 5s infinite;
+  filter: grayscale(100%);
+}
+
+@keyframes border-flicker {
+  0% {
+    border-color: #ff0000;
+  }
+  25% {
+    border-color: #00ff00;
+  }
+  50% {
+    border-color: #0000ff;
+  }
+  75% {
+    border-color: #e5ff00;
+  }
+  100% {
+    border-color: #ff00d4;
+  }
+}
+
+.logo-pagina:hover {
+  filter: grayscale(0%); 
+}
+
+.contenedor-calculadora {
+  width: 400px;
+  height: 600px;
+  padding: 14px;
+  margin-top: 150px;
+  background-image: url(./imagenes/gearfive.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  border: 5px solid #fff;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contenedor-calculadora:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.fila {
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
